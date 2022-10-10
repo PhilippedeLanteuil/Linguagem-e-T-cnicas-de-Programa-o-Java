@@ -1,10 +1,10 @@
 package LTP2;
 
 public class Pessoa {
-    String nome;
-    String telefone;
-    String cpf;
-    Endereço endereco;
+    private String nome;
+    private String telefone;
+    private String cpf;
+    private Endereço endereco;
     Animal animal; 
     
     public void info(){
@@ -67,6 +67,42 @@ public class Pessoa {
     }
     public String getCpf() {
         return cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public Endereço getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereço endereco) {
+        this.endereco = endereco;
+    }
+
+    public Animal getAnimal() {
+        return animal;
+    }
+
+    public void setAnimal(Animal animal) {
+        this.animal = animal;
     }
     
 }
