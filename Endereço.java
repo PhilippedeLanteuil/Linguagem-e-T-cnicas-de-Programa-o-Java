@@ -2,15 +2,23 @@ package LTP2;
 
 public class Endereço {
     private String rua;
-    private long numero;
     private String complemento;
     private String bairro;
     private String cidade;
     private String cep;
-    public void info(){
+    private long numero;
+    
+    public Endereço (){}
 
-        
-        
+    public Endereço(String rua, String complemento, String bairro, String cidade, String cep, long numero) {
+        this.rua = rua;
+        this.complemento = complemento;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.cep = cep;
+        this.numero = numero;
+    }
+    public void info(){
     }
     public String getRua() {
         return rua;

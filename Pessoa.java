@@ -1,29 +1,39 @@
 package LTP2;
 
 public class Pessoa {
-    private String nome;
-    private String telefone;
-    private String cpf;
-    private Endereço endereco;
-    Animal animal; 
-    
+     private String nome;
+     private String telefone;
+     private String cpf;
+     private Endereço endereco;
+     private Animal animal; 
+
+    public Pessoa (){}
+     
+    public Pessoa(String nome, String telefone, String cpf, Endereço endereco, Animal animal) {
+        this.nome = nome;
+        this.telefone = telefone;
+        this.cpf = cpf;
+        this.endereco = endereco;
+        this.animal = animal;
+    }
+
     public void info(){
         System.out.println("Nome :  " + nome);
         System.out.println("Telefone :  " + telefone);
         System.out.println("CPF :  " + cpf);
-        System.out.println("Endereço: " + endereco.rua);
-        System.out.println("Número :  " + endereco.numero);
-        System.out.println("Complemento :  " + endereco.complemento);
-        System.out.println("Bairro :  " + endereco.bairro);
-        System.out.println("Cidade :  " + endereco.cidade);
-        System.out.println("CEP :  " + endereco.cep);
-        System.out.println("Nome do Animal :" + animal.nome); 
-        System.out.println("Nascimento do Animal :" + animal.nascimento);
-        System.out.println("Peso do Animal :" + animal.peso);
-        System.out.println("Porte do Animal :" + animal.porte);
-        System.out.println("Raça do Animal :" + animal.raca);
-        System.out.println("Sexo do Animal :" + animal.sexo);
-        System.out.println("Tipo de Animal :" + animal.tipo);     
+        System.out.println("Endereço: " + endereco.getRua());
+        System.out.println("Número :  " + endereco.getNumero());
+        System.out.println("Complemento :  " + endereco.getComplemento());
+        System.out.println("Bairro :  " + endereco.getBairro());
+        System.out.println("Cidade :  " + endereco.getCidade());
+        System.out.println("CEP :  " + endereco.getCep());
+        System.out.println("Nome do Animal :" + animal.getNome()); 
+        System.out.println("Nascimento do Animal :" + animal.getNascimento());
+        System.out.println("Peso do Animal :" + animal.getPeso());
+        System.out.println("Porte do Animal :" + animal.getPorte());
+        System.out.println("Raça do Animal :" + animal.getRaca());
+        System.out.println("Sexo do Animal :" + animal.getSexo());
+        System.out.println("Tipo de Animal :" + animal.getTipo());     
     }
 
     private boolean validarCPF(String cpf){
@@ -104,7 +114,7 @@ public class Pessoa {
     public void setAnimal(Animal animal) {
         this.animal = animal;
     }
-    
+   
 }
 
 

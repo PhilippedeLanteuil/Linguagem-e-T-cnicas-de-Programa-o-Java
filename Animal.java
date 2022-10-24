@@ -9,62 +9,78 @@ public class Animal {
     private String nascimento;
     private char sexo;
 
-    public void info() {
-    }
+    public Animal(){}
 
-    public void setnome(String nome) {
+    public Animal(String nome, String raca, String porte, String tipo, double peso, String nascimento, char sexo) {
         this.nome = nome;
-    }
-
-    public String getnome() {
-        return this.nome;
-    }
-
-    public void setraca(String raca) {
         this.raca = raca;
-    }
-
-    public String getraca() {
-        return this.raca;
-    }
-
-    public void setporte(String porte) {
         this.porte = porte;
-    }
-
-    public String getporte() {
-        return this.porte;
-    }
-
-    public void settipo(String tipo) {
         this.tipo = tipo;
-    }
-
-    public String gettipo() {
-        return this.tipo;
-    }
-
-    public void setpeso(double peso) {
         this.peso = peso;
-    }
-
-    public String getpeso() {
-        return this.peso;
-    }
-
-    public void setnascimento(String nascimento) {
         this.nascimento = nascimento;
-    }
-
-    public String getnascimento() {
-        return this.nascimento;
-    }
-
-    public void setsexo(char sexo) {
         this.sexo = sexo;
     }
 
-    public String getsexo() {
-        return this.sexo;
+    public void info() {
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getRaca() {
+        return raca;
+    }
+
+    public void setRaca(String raca) {
+        this.raca = raca;
+    }
+
+    public String getPorte() {
+        return porte;
+    }
+
+    public void setPorte(String porte) {
+        this.porte = porte;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public String getNascimento() {
+        return nascimento;
+    }
+
+    public void setNascimento(String nascimento) {
+        this.nascimento = nascimento;
+    }
+
+    public char getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
+   
 }
+
+    
